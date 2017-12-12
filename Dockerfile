@@ -8,7 +8,7 @@ MAINTAINER Pa Bloo
 #Python modules install
 RUN apt-get update && apt-get install -y python
 
-COPY python.py
+COPY python.py .
 
 ENTRYPOINT ["python","python.py"]
 
