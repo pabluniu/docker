@@ -1,11 +1,14 @@
 ####
-#test
+#Python enviroment
 ####
 
-FROM centos:latest
+FROM ubuntu:16.04
 MAINTAINER Pa Bloo
 
-#Pythin modules install
-RUN yum -y update
+#Python modules install
+RUN apt-get update && apt-get install -y python
 
+COPY python.py
+
+ENTRYPOINT ["python","python.py"]
 
