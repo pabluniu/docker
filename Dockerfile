@@ -1,4 +1,4 @@
 FROM python
-MAINTAINER Pa Bloo
+MAINTAINER Pa Bloo <pabluniu@gmail.com>
 RUN pip install Flask
 COPY app.py .
